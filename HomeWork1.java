@@ -3,7 +3,6 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
         byte a = -128;
         short b = -15000;
         int c = -3;
