@@ -1,4 +1,7 @@
-package com.company;
+/**
+* @author denisov_mv
+* version 12.07.2018
+*/
 
 public class Main {
     public static void main(String[] args) {
