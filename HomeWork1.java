@@ -1,6 +1,6 @@
 /**
 * @author denisov_mv
-* version 12.07.2018
+* @version 12.07.2018
 */
 
 public class Main {
