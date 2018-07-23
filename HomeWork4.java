@@ -5,6 +5,7 @@ import java.util.Scanner;
  * author Denisov Maxim
  * date 22/07/2018
  */
+
 public class HomeWorkFourth {
 
     public static int SIZE = 3;
