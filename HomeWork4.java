@@ -44,15 +44,40 @@ public class HomeWorkFourth {
         System.out.println("Игра закончена");
     }
 
-    public static boolean checkWin(char symb) {
-        if (map[0][0] == symb && map[0][1] == symb && map[0][2] == symb) return true;
-        if (map[1][0] == symb && map[1][1] == symb && map[1][2] == symb) return true;
-        if (map[2][0] == symb && map[2][1] == symb && map[2][2] == symb) return true;
-        if (map[0][0] == symb && map[1][0] == symb && map[2][0] == symb) return true;
-        if (map[0][1] == symb && map[1][1] == symb && map[2][1] == symb) return true;
-        if (map[0][2] == symb && map[1][2] == symb && map[2][2] == symb) return true;
-        if (map[0][0] == symb && map[1][1] == symb && map[2][2] == symb) return true;
-        if (map[2][0] == symb && map[1][1] == symb && map[0][2] == symb) return true;
+    boolean checkWin(char c) {
+        int countV;
+        int countH;
+        int countDiagonalA = 0;
+        int countDiagonalB = 0;
+        for (int i = 0; i <= size - 1; i++) {
+            countH = 0;
+            countV = 0;
+            for (int j = 0; j <= size - 1; j++) {
+                //tested horizontal check
+                if (map[i][j] == c) {
+                    countH++;
+                    if (countH == size) return true;
+                }
+
+                //tested vertical check
+                if (map[j][i] == c) {
+                    countV++;
+                    if (countV == size) return true;
+                }
+            }
+
+            // tested diagonal A "\" check
+            if (map[i][i] == c) {
+                countDiagonalA++;
+                if (countDiagonalA == size) return true;
+            } else countDiagonalA = 0;
+
+            // tested diagonal B "/" check
+            if (map[i][size - 1 - i] == c) {
+                countDiagonalB++;
+                if (countDiagonalB == size) return true;
+            } else countDiagonalB = 0;
+        }
         return false;
     }
 
