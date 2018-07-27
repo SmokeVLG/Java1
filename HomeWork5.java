@@ -1,7 +1,8 @@
+
 /**
  * Java home work for Lesson 5
  * author Denisov Maxim
- * date 25/07/2018
+ * date 27/07/2018
  */
 public class HomeWork5 {
     /*
@@ -15,6 +16,30 @@ public class HomeWork5 {
         private final int salary;
         private final int age;
 
+        public String getFio() {
+            return fio;
+        }
+
+        public String getPost() {
+            return post;
+        }
+
+        public String getMail() {
+            return mail;
+        }
+
+        public String getTelephone() {
+            return telephone;
+        }
+
+        public int getSalary() {
+            return salary;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
         Person(String fio, String post, String mail, String telephone, int salary, int age) {
             this.fio = fio;
             this.post = post;
@@ -25,14 +50,15 @@ public class HomeWork5 {
         }
 
         //output employee
-        void getPersonInfo() {
-            System.out.println("FIO - > " + this.fio + "\n" +
+        String getPersonInfo() {
+            return "FIO - > " + this.fio + "\n" +
                     "FIO - > " + this.fio + "\n" +
                     "post - > " + this.post + "\n" +
                     "mail - > " + this.mail + "\n" +
                     "telephone - > " + this.telephone + "\n" +
                     "salary - > " + this.salary + "\n" +
-                    "age - > " + this.age + "\n");
+                    "age - > " + this.age + "\n";
+
         }
     }
 
@@ -50,8 +76,8 @@ public class HomeWork5 {
         persArray[4] = new Person("Kordonov Slava", "Engineer", "ivivan5@mailbox.com", "892312312", 30000, 70); // потом для каждой ячейки массива задаем объект
         //task5
         for (Person curPerson : persArray) {
-            if (curPerson.age > 40) {
-                curPerson.getPersonInfo();
+            if (curPerson.getAge() > 40) {
+                System.out.println(curPerson.getPersonInfo());
             }
         }
     }
