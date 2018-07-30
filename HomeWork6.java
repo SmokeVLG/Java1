@@ -4,28 +4,23 @@
  * author Denisov Maxim
  * date 30/07/2018
  *
- * @link https://github.com/SmokeVLG/Java1/pull/8
+ * @link
  */
 public class HomeWork6 {
 
     //Action for animal
 
-    interface IRun {
+    interface IAction {
         void run(int length);
-    }
-
-    interface ISwim {
         void swim(int length);
-    }
-
-    interface IJump {
         void jump(int height);
     }
+
 
     /*
     * Class for Animal
     * */
-    abstract static class Animal implements IRun, ISwim, IJump {
+    abstract static class Animal implements IAction {
         String name;
         String color;
         int age;
