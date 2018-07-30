@@ -1,6 +1,6 @@
 
 /**
- * Java home work for Lesson 5
+ * Java home work for Lesson 6
  * author Denisov Maxim
  * date 30/07/2018
  *
