@@ -4,7 +4,7 @@
  * author Denisov Maxim
  * date 30/07/2018
  *
- * @link
+ * @link https://github.com/SmokeVLG/Java1/pull/8
  */
 public class HomeWork6 {
 
