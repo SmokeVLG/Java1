@@ -4,7 +4,7 @@
  * author Denisov Maxim
  * date 02/08/2018
  *
- * @link 
+ * @link https://github.com/SmokeVLG/Java1/edit/master/HomeWork7.java
  */
 public class HomeWork7 {
 
